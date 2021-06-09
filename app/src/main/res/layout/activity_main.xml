@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/btnGreen">
+
+        <ImageView
+            android:id="@+id/imgAll"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:src="@drawable/ic_all"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/imgHappy"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:src="@drawable/ic_happy"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/imgMorning"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:src="@drawable/ic_sun"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Hello World!"
+        android:layout_below="@id/linearMenu"
+        android:textSize="20sp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/txtMensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:text="Você não é derrotado quando perde, você é derrotado qando desiste!"
+        android:textSize="20sp"
+        android:layout_margin="16dp"/>
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/txtMensagem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/black" />
+
+    <Button
+        android:id="@+id/btnNewFrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ripple_btn"
+        android:padding="10dp"
+        android:text="Nova Frase"
+        android:textSize="20sp" />
+</RelativeLayout>
